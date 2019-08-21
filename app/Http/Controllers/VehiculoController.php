@@ -44,16 +44,12 @@ class VehiculoController extends Controller
         $message=([
             'cedula.unique' => 'Persona Ya Existente',
             'cedula.numeric' => 'Datos Incorrectos',
-            'nombre.string' => 'Datos Incorrectos',
-            'placa.string' => 'Datos Incorrectos',
             'marca.string' => 'Datos Incorrectos',
             'marca.exists' => 'Marca No Registrada',
         ]);
 
         $request->validate([
             'cedula' => 'required|unique:persona_models|numeric',
-            'nombre' => 'required|string',
-            'placa' => 'required|string',
             'marca' => 'required|exists:marca_models,nombre',
         ],$message);
 
@@ -71,7 +67,7 @@ class VehiculoController extends Controller
 
         session()->flash('registrado', 'La persona y el vehiculo han sido registrados exitosamente');
 
-        return redirect('/A765/listarVehiculos');
+        return redirect('/A765/registrarVehiculo');
         
     }
 

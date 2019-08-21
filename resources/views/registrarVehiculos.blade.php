@@ -5,6 +5,14 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+                @if (session()->has('registrado'))
+			    <div class="container">
+				    <div class="alert alert-success alert-block">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>	
+	        		    <span class="glyphicon glyphicon-ok"><strong>¡La persona y el vehiculo han sido registrados exitosamente!</strong>
+				    </div>
+			    </div>
+			    @endif
             <div class="card">
                 <div class="card-header">
                     {{ __('Zona de Registros') }} 

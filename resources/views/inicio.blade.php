@@ -10,15 +10,15 @@
                     <div class="card-body">
                         <p class="card-text"></p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="/A765/registrarVehiculo">Registrar Vehiculos</a>
+                            <a href="/A765/registrarVehiculo">Registrar Vehículos</a>
                         </div>
 
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="/A765/listarVehiculos">Listar Vehiculos</a>
+                            <a href="/A765/listarVehiculos">Listar Vehículos</a>
                         </div>
 
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="/A765/estadisticasVehiculos">Estadisticas Vehiculos</a>
+                            <a href="/A765/estadisticasVehiculos">Estadísticas Vehículos</a>
                         </div>
                     </div>
                 </div>

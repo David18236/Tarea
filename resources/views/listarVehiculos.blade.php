@@ -5,22 +5,14 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-				@if (session()->has('registrado'))
-			    <div class="container">
-				    <div class="alert alert-success alert-block">
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>	
-	        		    <span class="glyphicon glyphicon-ok"><strong>¡La persona y el vehiculo han sido registrados exitosamente!</strong>
-				    </div>
-			    </div>
-			    @endif
         	<div class="card">
-	        	<div class="card-header" style="background: #353942;">
+	        	<div class="card-header" style="background: white;">
 					<button type="button" onclick="window.location='/A765'" class="btn btn-outline-primary float-right">Volver</button>
 	        			<p></p>
 	        		<div class="container">
 		        		<div class="row">
 			        		<div class="col-sm-9">
-			        			<h4 style="color:white;">Listar Vehiculos</h4>
+			        			<h4 style="color:black;">Listar Vehiculos</h4>
 				       		</div>
 		        		</div>
 	        		</div>
@@ -36,7 +28,7 @@
 		    				</tr>
 				  		</thead>
 				  		<tbody>
-				  			@foreach($vehiculos as $vehiculo)
+				  			@foreach($vehiculo_models as $vehiculo)
 				  				<tr>
                                     @if ($vehiculo -> marca == "Mazda")
                                     <th style="text-align:center"> {{ $vehiculo -> placa }} <span style="color:green"> Los de Mazda son los mejores </span>
