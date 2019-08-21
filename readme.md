@@ -5,9 +5,10 @@ El proyecto consiste en una aplicación de desarrollo web en donde se puede regi
 Para que el proyecto funcione correctamente se deben realizar los siguientes pasos:
 1.  Realizar la configuración del archivo ".env" para determinar que gestor de base de datos se va a trabajar, y que nombre se le va a dar a la base de datos.
 2. Escribir el comando "php composer install".
-3. Escribir el comando "php artisan migrate" en la consola para realizar la migración de la base de datos.
-4. Escribir el comando "php artisan db:seed" para cargar los datos iniciales.
-5. Escribir el comando "php artisan serve" para que la aplicación pueda correr.
+3. Escribir el comando "php artisan key:generate".
+4. Escribir el comando "php artisan migrate" en la consola para realizar la migración de la base de datos.
+5. Escribir el comando "php artisan db:seed" para cargar los datos iniciales.
+6. Escribir el comando "php artisan serve" para que la aplicación pueda correr.
 ### Como utilizarlo
 1. En la URL del navegador se debe escribir "localhost:8000/A765".
 2. Se mostrará una interfaz con 3 enlaces (Registrar Vehículo, Listar Vehículos, Estadísticas Vehículos).
